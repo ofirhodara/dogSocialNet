@@ -1,0 +1,136 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterShon.master.cs" Inherits="MasterShon" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body dir="rtl">
+    <form id="form1" runat="server">
+        <div class="w3-top">
+            <div class="w3-row w3-padding w3-black">
+                <%if (Session["client_now"] != null)
+                    { %>
+                <div class="w3-col s3">
+                    <asp:Menu ID="menuParks" runat="server" DisappearAfter="2000"
+                        StaticDisplayLevels="2"
+                        StaticSubMenuIndent="10"
+                        Orientation="Vertical"
+                        Font-Names="Arial"
+                        Target="_blank" class="w3-button w3-block w3-black">
+                        <StaticMenuItemStyle BackColor="LightSteelBlue"
+                            ForeColor="Black" />
+                        <StaticHoverStyle BackColor="LightSkyBlue" />
+                        <DynamicMenuItemStyle BackColor="Black"
+                            ForeColor="Silver" />
+                        <DynamicHoverStyle BackColor="LightSkyBlue"
+                            ForeColor="Black" />
+                    </asp:Menu>
+                </div>
+
+                <div class="w3-col s3">
+                    <a href="HomePage.aspx" class="w3-button w3-block w3-black">בית</a>
+                </div>
+                <div class="w3-col s3">
+                    <a href="editClientDetails.aspx" class="w3-button w3-block w3-black">עריכת פרטי חשבון</a>
+                </div>
+
+                <div class="w3-col s3">
+                    <a href="AddDogToClient.aspx" class="w3-button w3-block w3-black">הוסף כלב</a>
+                </div>
+
+                <div class="w3-col s3">
+                    <a href="logOut.aspx" class="w3-button w3-block w3-black">LogOut</a>
+                </div>
+
+                <div class="w3-col s3">
+                    <a href="viewVetrinars.aspx" class="w3-button w3-block w3-black">וטרינרים</a>
+                </div>
+
+
+                <%} %>
+
+                <%if (Session["dogi"] != null)
+                    { %>
+                <div class="w3-col s3">
+                    <a href="tinder.aspx" class="w3-button w3-block w3-black">טינדר פגישות</a>
+                </div>
+                <div class="w3-col s3">
+                    <a href="editDogg.aspx" class="w3-button w3-block w3-black">עריכת פרטי כלב</a>
+                </div>
+                 <div class="w3-col s3">
+                    <a href="Profile_Dog.aspx?typ=mine" class="w3-button w3-block w3-black">My Profile</a>
+                </div>
+
+                <%} %>
+
+                <%if (Session["dogi"] == null && Session["client_now"] == null)
+                    { %>
+
+                <div class="w3-col s3">
+                    <a href="register_Shon.aspx" class="w3-button w3-block w3-black">הרשמה</a>
+                </div>
+
+                <div class="w3-col s3">
+                    <a href="logIn.aspx" class="w3-button w3-block w3-black">התחברות</a>
+                </div>
+
+                <%} %>
+
+
+
+
+            
+
+
+                <%
+                    bool ifAdmin = bool.Parse(Session["isAdmin"].ToString());
+                    if (ifAdmin)
+                    { %>
+                <div class="w3-col s3">
+                    <a href="adminPage.aspx" class="w3-button w3-block w3-black">דף המנהל</a>
+                </div>
+                <%} %>
+
+
+
+                <%if (Session["client_now"] != null)
+                    { %>
+                <div class="w3-col s3">
+                    <a href="chooseDog.aspx" class="w3-button w3-block w3-black">
+                        <%if (Session["dogi"] == null)
+                            { %>בחר כלב<%}
+                                           else
+                                           {%>החלף חשבון כלב<%} %>
+                    </a>
+                </div>
+                <%} %>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+
+        </div>
+        <div class="w3-container w3-pale-green">
+
+
+
+
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+</body>
+</html>

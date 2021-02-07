@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="breed">
+    <Position X="13.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAEAABAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\breed.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="breedHelper">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAgAIAAAAAAAsAAAAAAAAA=</HashCode>
+      <FileName>App_Code\breedHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientHelper">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAMAAAAAAAAAAAAAAAAIACEIACACEAAA=</HashCode>
+      <FileName>App_Code\ClientHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dog">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IsAAAAAAAAAACACBoIAAEGIAAAAkAACgABAAAACQBAI=</HashCode>
+      <FileName>App_Code\Dog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="dogHelper">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SAAAgAgAAAQAAAABAAAgICAAAAAQAEBACEEAAABAEBQ=</HashCode>
+      <FileName>App_Code\dogHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoveBreedHelper">
+    <Position X="5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAIAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>App_Code\LoveBreedHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyAdoHelper">
+    <Position X="3.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACiBACAACEAAAAAAAAAAACAAAAAAAIA=</HashCode>
+      <FileName>App_Code\MyAdoHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="park_Dogs">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAOEAAAEkAAQACAQAIAAAAQAAIAAAAACIAQAAAAAAA=</HashCode>
+      <FileName>App_Code\park_Dogs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="parkDogsHelper">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAACAIAEAAQCBAAAgAAEAAAAAAAAA=</HashCode>
+      <FileName>App_Code\parkDogsHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rate">
+    <Position X="1" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAIIAAAAAAQAAAAAgAAAAACAACAAACAAAAAAAAA=</HashCode>
+      <FileName>App_Code\rate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ratesHelper">
+    <Position X="1" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAEAAAAAgAAA=</HashCode>
+      <FileName>App_Code\ratesHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Client">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAECACCAAAAAkAAAwAAACAAYADAACAAAAAIEAAAA=</HashCode>
+      <FileName>App_Code\Client.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
